@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee & Cakes</title>
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body class="bg-light">
+
+<!-- Encabezado -->
+    <header class="container-fluid bg-white d-flex justify-content-end"> 
+        <p class="text-dark mb-0 p-2"><i class="fa-solid fa-location-dot" id="address">Av. Santa Fe &nbsp 2400 - Bs As</i></p>
+    </header>
+
+<!--Barra de navegacion-->
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light border-3 border-bottom">
+           <div class="container-fluid bg-light">
+               <a href="index.html" class="navbar-brand fw-bold fs-1 text-dark">Coffee & Cakes</a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#MenuNavegacion">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="MenuNavegacion" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-3">
+                        <li class="nav-item"><a  class="nav-link text-dark fw-bold" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a  class="nav-link text-dark fw-bold" href="./pages/about.html">Nosotros</a></li>
+                        <li class="nav-item"><a  class="nav-link text-dark fw-bold" href="./pages/gallery.html">Galeria</a></li>
+                        <li class="nav-item"><a  class="nav-link text-dark fw-bold" href="./pages/catering.html">Catering</a></li>
+                        <li class="nav-item"><a  class="nav-link text-dark fw-bold" href="./pages/contact.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+   <h6 class="fw-bold justify-content-start ms-3 bg-white">La tienda de tortas y café más dulce de <span class="fs-5" id="span">Buenos Aires</span></h6>
+    
+   <!-- SLIDER DE IMAGENES-->
+    <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+               <img src="./img/slider1.jpg" class="d-block w-100" alt="">
+            </div> 
+ 
+            <div class="carousel-item" data-bs-interval="3000">
+               <img src="./img/slider2.jpg" class="d-block w-100" alt="...">
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+               <img src="./img/slider3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"  data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel"  data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>  
+      
+    <!--main section-->
+    
+    <section class="d-flex flex-column justify-content-center align-items-center pt-4 rounded-pill shadow-lg text-center w-50 mx-auto" id="intro">
+        <h1 class=" my-3 p-3 fs-2">Bienvenido a su tienda dulce<br><span class="text-dark" id="span">Coffee & Cakes<span/></h1>  
+    </section>
+ 
+   <!-- SECCION ACERCA DE NOSOTROS-->     
+    <section>
+        <div class="container w-50 m-auto text-center" id="store">
+            <h2 class="mb-6 fs-3 mt-5">Queremos endulzar tus momentos</h2>
+            <p class="mt-3 fs-6 fw-bold">Donec tempus, libero eu molestie rhoncus, turpis libero blandit libero, elementum dapibus justo nibh id orci. Sed vitae libero vestibulum, pellentesque dui non, volutpat dui. Vestibulum non gravida velit, quis interdum elit. Pellentesque dapibus pharetra lectus sit amet venenatis.</p>
+            <a class="btn btn-secondary mb-4" data-bs-toggle="collapse" href="#collapseExample" role="button" 
+            aria-expanded="false" aria-controls="collapseExample">
+            Ver informacion
+            </a>
+        
+           <div class="collapse" id="collapseExample">
+                <div class="card card-body fw-bold">
+                Contactanos para ayudarte a organizar tus eventos, desde cumpleaños, bodas o lo que se te ocurra. Todo con el toque dulce que nos caracteriza.
+                </div>
+           </div>
+        </div>
+    
+        <div class="mt-3 text-center mb-6">
+            <img src="./img/niño1.jpg" alt="niño comiendo" class="img-fluid" id="img-niño" ><br>
+        </div>
+    <section>
+
+    <!--Combos y servicios-->    
+    <h2 class="mt-5 mb-6 text-center shadow-sm">Nuestras especialidades para la merienda</h2>  
+    
+    <section class="w-100">
+        <div class="row w-75 mx-auto" id="combos-fila-1">       
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-sm-start justify-content-lg-end text-md-start my-1 my-md-4 icono-wrap">
+                <img src="./img/combo1.jpg" alt="combo1"   width="270" height="200" class="border border-5 border-secondary">
+    
+                <div>
+                    <h3 class="fs-5 mt-4 px-5 pb-1 icono-wrap fw-bold">Especial 1</h3>
+                    <p class="px-5 fw-bold">Americano + macaron</p>
+                    <p class="px-5 fw-bold">$300</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-sm-start justify-content-lg-start text-md-start my-1 my-md-4 icono-wrap">
+                <img src="./img/combo2.jpg" alt="combo2" width="270" height="200" class="border border-5 border-secondary">
+    
+                <div>
+                    <h3 class="fs-5 mt-4 px-5 pb-1 icono-wrap fw-bold">Especial 2</h3>
+                    <p class="px-5 fw-bold">Capuccino + cookies</p>
+                    <p class="px-5 fw-bold">$300</p>
+                </div>
+            </div>   
+        </div>
+        
+        <div class="row w-75 mx-auto" id="combos-fila-2">       
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-sm-start justify-content-lg-end text-md-start my-1 my-md-4 icono-wrap">
+                <img src="./img/combo3.jpg" alt="combo3"   width="270" height="200" class="border border-5 border-secondary">
+    
+                <div>
+                    <h3 class="fs-5 mt-4 px-5 pb-1 icono-wrap fw-bold">Especial 3</h3>
+                    <p class="px-5 fw-bold">Macchiato + muffin</p>
+                    <p class="px-5 fw-bold">$250</p>
+                </div>
+            </div>
+    
+            <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-sm-start justify-content-lg-start text-md-start my-1 my-md-4 mb-md-5 icono-wrap">
+                <img src="./img/combo4.jpg" alt="combo4" width="270" height="200" class="border border-5 border-secondary">
+    
+                <div>
+                    <h3 class="fs-5 mt-4 px-5 pb-1 icono-wrap fw-bold">Especial 4</h3>
+                    <p class="px-5 fw-bold">Espresso + cupcakes</p>
+                    <p class="px-5 fw-bold">$250</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    
+    <!-----Footer----->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-5 mx-5">
+                <div class="col-md-3 mb-5 justify-content-center pt-5">
+                   <h6 class="text-white">¿Por qué elegirnos?</h6>
+                   <p class="text-white">Maecenas commodo, est et vehicula finibus, neque mi hendrerit odio, vitae eleifend eros nibh eu metus.</p>
+                </div>
+                <div class="col-md-3 mb-5 justify-content-center pt-5">
+                   <h6 class="text-white mx-3">Contáctanos</h6>
+                   <ul class="list-unstyled footer-link">
+                       <li class="d-flex">
+                           <span class="me-3"></span><span class="text-white">Av.Santa Fe 2400, Bs As. Argentina</span>
+                       </li>
+                       <li class="d-flex">
+                        <span class="me-3"></span><span class="text-white">Telefono: +54 11 2580 000</span>
+                       </li>
+                       <li class="d-flex">
+                        <span class="me-3"></span><span class="text-white">contact@coffeecakes.com</span>
+                       </li>
+                   </ul>
+                </div>
+                <div class="col-md-3 justify-content-center mx-auto pt-5">
+                    <h6 class="text-white">Sigamos conectados</h6>
+                    <ul class="list-unstyled footer-link">
+                        <li><a href="https://www.facebook.com" target="blank"><i class="fa-brands fa-facebook text-white"></i>&nbspFacebook</a></li>
+                        <li><a href="https://www.twitter.com" target="blank"><i class="fa-brands fa-twitter text-white"></i>&nbspTwitter</a></li>
+                        <li><a href="https://www.instagram.com" target="blank"><i class="fa-brands fa-instagram text-white"></i>&nbspInstagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text md center text-center lg center text center justify-content-center">
+                    <p class="text-white">© 2022 Maruinyork | Todos los derechos reservados</p>
+                </div>
+            </div>
+       </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
